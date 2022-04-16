@@ -1,8 +1,5 @@
-import { useState } from "react";
-
-import "./App.scss";
-
 import MainRoutes from "./routes";
+import "./App.scss";
 
 function App() {
   return (
