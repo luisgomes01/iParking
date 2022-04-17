@@ -12,7 +12,8 @@
       gap: 200px !important;
 
       .logo {
-        margin-right: 100px;
+        top: 100px;
+
       }
 
       h2 {
@@ -42,6 +43,7 @@
           border-radius: 40px !important;
           font-size: 25px;
           font-weight: $font-weight-regular;
+          height: 65px;
         }
 
         .btn-outline-dark {

@@ -7,16 +7,16 @@ import "./home.scss";
 export default function Home() {
   return (
     <main className="container-fluid d-flex p-0 home">
-      <section className="container-fluid left-container">
-        <div className="align-items-center d-flex flex-column gap-5 h-75 justify-content-center left-container-items mb-5 px-md-3 px-sm-3 w-100">
+      <section className="justify-content-end container-fluid d-flex left-container">
+        <div className="d-flex flex-column h-100 justify-content-center left-container-items w-75">
           <img
-            className="logo"
+            className="logo position-absolute"
             alt="logo.svg"
             height={80}
             src={logo}
             width={275}
           />
-          <h2 className="text-left text-white">
+          <h2 className="text-left text-white w-75">
             {CONSTANTS.PARK_WAS_NEVER_THAT_EASY}
           </h2>
         </div>
@@ -27,12 +27,12 @@ export default function Home() {
             <h2>{CONSTANTS.ACCESS_AS}</h2>
           </div>
           <div className="d-grid gap-3 col-6 mx-auto right-container-body">
-            <button type="button" className="btn btn-outline-dark btn-lg">
+            <button type="button" className="btn btn-outline-dark">
               <span className="align-middle w-100 h-100">
                 {CONSTANTS.ADMIN}
               </span>
             </button>
-            <button type="button" className="btn btn-outline-primary btn-lg">
+            <button type="button" className="btn btn-outline-primary mt-2">
               <span className="align-middle w-100 h-100">
                 {CONSTANTS.CUSTOMER}
               </span>
