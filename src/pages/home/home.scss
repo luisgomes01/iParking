@@ -59,6 +59,11 @@
           color: $orange;
         }
 
+        .btn-outline-primary:focus,
+        .btn-outline-dark:focus {
+          box-shadow: none;
+        }
+
         .btn-outline-primary:hover {
           background-color: $orange;
           color: #fff;
