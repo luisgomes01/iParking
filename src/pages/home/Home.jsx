@@ -1,8 +1,8 @@
 import React from "react";
 
-import logo from "../assets/iparking-logo.svg";
-import { CONSTANTS } from "../utils/constants";
-import "./pages.scss";
+import logo from "../../assets/iparking-logo.svg";
+import { CONSTANTS } from "../../utils/constants";
+import "./home.scss";
 
 export default function Home() {
   return (
