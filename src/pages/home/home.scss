@@ -14,7 +14,6 @@
       .logo {
         max-width: 275px;
         max-height: 80px;
-        top: 100px;
       }
 
       h2 {
@@ -79,9 +78,6 @@
     .left-container {
       .left-container-items {
         gap: 100px !important;
-        .logo {
-          margin-right: 40px;
-        }
 
         h2 {
           font-size: 40px;
@@ -113,12 +109,9 @@
     .left-container {
       .left-container-items {
         gap: 50 !important;
-        .logo {
-          margin-right: 0px;
-        }
 
         h2 {
-          font-size: 30px;
+          font-size: 22px;
           font-weight: $font-weight-bold;
           line-height: 60px;
           width: 55%;
@@ -148,69 +141,43 @@
   .home {
     flex-direction: column !important;
     width: 100% !important;
+    height: 100% !important;
     .left-container {
+      height: 20rem;
       width: 100%;
       .left-container-items {
         gap: 40px !important;
 
         .logo {
           margin-right: 100px;
-          max-width: 275px;
-          max-height: 80px;
+          margin-top: 20px;
         }
 
         h2 {
           font-size: 28px;
           font-weight: $font-weight-bold;
           line-height: 50px;
-          max-width: 55%;
+          max-width: 70%;
         }
       }
     }
 
     .right-container {
       width: 55%;
-
+      height: 20rem;
       .right-container-content {
-        height: 100%;
-
         .right-container-title {
           h2 {
-            font-size: 20px !important;
-            font-weight: $font-weight-semibold;
+            font-size: 17px !important;
           }
         }
 
         .right-container-body {
           button {
             border-radius: 40px !important;
-            font-size: 18px !important;
-            font-weight: $font-weight-regular;
-          }
-
-          .btn-outline-dark {
-            border-color: $dark;
-            color: $dark;
-          }
-
-          .btn-outline-dark:hover {
-            background-color: $dark;
-            color: #fff;
-          }
-
-          .btn-outline-primary {
-            border-color: $orange;
-            color: $orange;
-          }
-
-          .btn-outline-primary:focus,
-          .btn-outline-dark:focus {
-            box-shadow: none;
-          }
-
-          .btn-outline-primary:hover {
-            background-color: $orange;
-            color: #fff;
+            font-size: 16px !important;
+            height: 47px;
+            width: 250px;
           }
         }
       }
