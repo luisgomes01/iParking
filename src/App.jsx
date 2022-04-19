@@ -1,5 +1,6 @@
-import MainRoutes from "./routes";
 import "./App.scss";
+
+import MainRoutes from "./routes";
 
 function App() {
   return (
