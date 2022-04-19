@@ -16,7 +16,7 @@ export default function Home() {
         </div>
       </section>
       <section className="container-fluid right-container">
-        <div className="align-items-center d-flex flex-column gap-2 h-100 justify-content-center mt-3 right-container-content">
+        <div className="align-items-center d-flex flex-column gap-2 h-100 justify-content-center right-container-content">
           <div className="right-container-title">
             <h2>{CONSTANTS.ACCESS_AS}</h2>
           </div>
