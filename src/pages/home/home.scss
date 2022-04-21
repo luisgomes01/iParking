@@ -135,6 +135,61 @@
       }
     }
   }
+  
+}
+
+
+@media (max-width: 991.98px) {
+  .home {
+    flex-direction: column !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin-left: 0;
+    padding-left: 0;
+    .left-container {
+      height: 35rem;
+      width: 100%;
+      justify-content: center !important; 
+      .left-container-items { 
+        gap: 80px !important;
+        align-items: center;
+        .logo {
+          margin-top: 20px;
+        }
+
+        h2 {
+          text-align: center;
+          font-size: 40px;
+          font-weight: $font-weight-bold;
+          line-height: 58px;
+          max-width: 70%;
+        }
+      }
+    }
+    
+    .right-container {
+      width: 55%;
+      height: 20rem;
+      .right-container-content {
+        .right-container-title {
+          h2 {
+            font-size: 32px !important;
+            letter-spacing: 2px;
+          }
+        }
+
+        .right-container-body {
+          button {
+            border-radius: 40px !important;
+            font-size: 24px !important;
+            align-self: center;
+            height: 64px;
+            width: 400px;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 575.98px) {
