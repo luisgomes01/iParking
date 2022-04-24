@@ -1,8 +1,9 @@
-import "./home.scss";
+import './home.scss'
 
-import { CONSTANTS } from "../../utils/constants";
-import React from "react";
-import logo from "../../assets/iparking-logo.svg";
+import React from 'react'
+
+import logo from '../../assets/iparking-logo.svg'
+import { CONSTANTS } from '../../utils/constants'
 
 export default function Home() {
   return (
@@ -35,5 +36,5 @@ export default function Home() {
         </div>
       </section>
     </main>
-  );
+  )
 }

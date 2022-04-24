@@ -1,6 +1,7 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import Home from "../pages/home/Home";
+import Home from '../pages/home/Home'
 
 export default function MainRoutes() {
   return (
@@ -9,5 +10,5 @@ export default function MainRoutes() {
         <Route path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
-  );
+  )
 }

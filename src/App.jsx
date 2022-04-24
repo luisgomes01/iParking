@@ -1,13 +1,15 @@
-import "./App.scss";
+import './App.scss'
 
-import MainRoutes from "./routes";
+import React from 'react'
 
-function App() {
+import MainRoutes from './routes'
+
+function App({ armor, house, name }) {
   return (
     <div className="App">
       <MainRoutes />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
-import React from "react";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Menu() {
   return (
-    <ul class="nav d-flex">
-      <li class="nav-item me-3">
+    <ul className="nav d-flex">
+      <li className="nav-item me-3">
         <Link to="/">To Home</Link>
       </li>
-      <li class="nav-item">
+      <li className="nav-item">
         <Link to="/login">To Login</Link>
       </li>
     </ul>
-  );
+  )
 }
