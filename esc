@@ -1,0 +1,71 @@
+[33mcommit 2d5d1dbca7f2c344cc49fe69969dbc5a20ab5451[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: cristianoalves12 <cristianoalf012@gmail.com>
+Date:   Thu Apr 21 18:08:46 2022 -0300
+
+    gifix tablet layout
+
+[33mcommit c81186471500fabae5b4d149383d02eaa20369c6[m
+Author: Luís Gomes <luis.gomes@liferay.com>
+Date:   Tue Apr 19 09:41:54 2022 -0300
+
+    Format the whole project
+
+[33mcommit a64fd0525e4e43949344de8b17635cc36adc14b0[m
+Author: Luís Gomes <luis.gomes@liferay.com>
+Date:   Tue Apr 19 08:28:09 2022 -0300
+
+    BIG FIX OMG
+
+[33mcommit 92ea0bbeb7a57d064304d59f37b2f82d402af0c8[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Sun Apr 17 20:06:22 2022 -0300
+
+    Add responsivity to login page
+
+[33mcommit fa076a4120f52ec48dfa009df380450cf2ce6441[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Sun Apr 17 13:26:44 2022 -0300
+
+    Remove box-shadow on focus
+
+[33mcommit c4d6a721119887ef9f563417b00f2d689e7d0556[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Sun Apr 17 12:51:13 2022 -0300
+
+    Small changes on project structure
+
+[33mcommit 945354b561157f8f59cd8ab0b9160a82fea50e74[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Sun Apr 17 10:17:20 2022 -0300
+
+    Add constants to centralize data
+
+[33mcommit a355b209c637539ad4ae5fa1adf60a7aaa4e2fd9[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Sat Apr 16 23:15:18 2022 -0300
+
+    Add logo to app header
+
+[33mcommit 5389fae68745be2d284cb7b60c247b77e74efb53[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Fri Apr 15 23:33:20 2022 -0300
+
+    Add login page
+
+[33mcommit d8cfb1cfabf0ba3c2e3f37828e87d02321a62005[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Fri Apr 15 23:04:04 2022 -0300
+
+    Base routes
+
+[33mcommit 7e3da7979df100345c973f45b3442dfccc4d9ed4[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Fri Apr 15 21:44:23 2022 -0300
+
+    Add some libraries
+
+[33mcommit 09428da85422a3090ab9ef7ae2c3bc73e6b9cd30[m
+Author: luisxx123 <luis252001@hotmail.com>
+Date:   Fri Apr 15 21:30:04 2022 -0300
+
+    first commit
