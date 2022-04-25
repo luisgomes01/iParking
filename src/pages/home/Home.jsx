@@ -1,11 +1,14 @@
 import './home.scss'
 
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import logo from '../../assets/iparking-logo.svg'
 import { CONSTANTS } from '../../utils/constants'
 
 export default function Home() {
+  const navigate = useNavigate()
+
   return (
     <main className="container-fluid d-flex p-0 home">
       <section className="container-fluid d-flex justify-content-end left-container">
@@ -22,12 +25,16 @@ export default function Home() {
             <h2>{CONSTANTS.ACCESS_AS}</h2>
           </div>
           <div className="d-grid gap-3 col-lg-6 right-container-body">
-            <button type="button" className="btn btn-outline-dark">
+            <button
+              className="btn btn-outline-dark"
+              onClick={() => navigate('admin')}
+              type="button"
+            >
               <span className="align-middle w-100 h-100">
                 {CONSTANTS.ADMIN}
               </span>
             </button>
-            <button type="button" className="btn btn-outline-primary mt-2">
+            <button className="btn btn-outline-primary mt-2" type="button">
               <span className="align-middle w-100 h-100">
                 {CONSTANTS.CUSTOMER}
               </span>
