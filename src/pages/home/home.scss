@@ -1,5 +1,6 @@
 @import "../../styles/colors";
 @import "../../styles/fonts";
+@import "../../styles/medias";
 
 .home {
   min-height: 100vh;
@@ -74,7 +75,7 @@
     }
   }
 
-  @media (max-width: 1438.98px) {
+  @media (max-width: $desktop) {
     .left-container {
       .left-container-items {
         gap: 100px !important;
@@ -105,7 +106,7 @@
     }
   }
 
-  @media (max-width: 767.98px) {
+  @media (max-width: $tablet-sm) {
     .left-container {
       .left-container-items {
         gap: 50 !important;
@@ -139,7 +140,7 @@
 }
 
 
-@media (max-width: 991.98px) {
+@media (max-width: $tablet) {
   .home {
     flex-direction: column !important;
     width: 100% !important;
@@ -192,7 +193,7 @@
   }
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: $cellphone) {
   .home {
     flex-direction: column !important;
     width: 100% !important;

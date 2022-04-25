@@ -1,0 +1,42 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+@import "../../styles/medias";
+
+.menu {
+    background-color: $dark;
+    .logo {
+       max-width: 20%;
+    }
+}
+
+@media (max-width: $desktop) {
+    .menu {
+        .logo {
+            max-width: 25%;
+        }
+    }
+}
+
+@media (max-width: $tablet) {
+    .menu {
+        .logo {
+            max-width: 35%;
+        }
+    }
+}
+
+@media (max-width: $tablet-sm) {
+    .menu {
+        .logo {
+            max-width: 45%;
+        }
+    }
+}
+
+@media (max-width: $tablet-sm) {
+    .menu {
+        .logo {
+            max-width: 55%;
+        }
+    }
+}
