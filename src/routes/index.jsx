@@ -1,6 +1,7 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 
+import Menu from '../layout/Menu/Menu'
 import Admin from '../pages/admin/Admin'
 import Home from '../pages/home/Home'
 
@@ -8,9 +9,20 @@ export default function MainRoutes() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/admin" element={<Index />}>
+          <Route index element={<Admin />} />
+        </Route>
         <Route path="/" element={<Home />} />
-        <Route path="/admin" element={<Admin />} />
       </Routes>
     </BrowserRouter>
+  )
+}
+
+const Index = () => {
+  return (
+    <div className="main-container">
+      <Menu />
+      <Outlet />
+    </div>
   )
 }

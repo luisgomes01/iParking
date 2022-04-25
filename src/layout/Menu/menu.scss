@@ -5,14 +5,14 @@
 .menu {
     background-color: $dark;
     .logo {
-       max-width: 20%;
+        max-width: 300px;
     }
 }
 
 @media (max-width: $desktop) {
     .menu {
         .logo {
-            max-width: 25%;
+            max-width: 280px;
         }
     }
 }
@@ -20,7 +20,7 @@
 @media (max-width: $tablet) {
     .menu {
         .logo {
-            max-width: 35%;
+            max-width: 250px;
         }
     }
 }
@@ -28,15 +28,15 @@
 @media (max-width: $tablet-sm) {
     .menu {
         .logo {
-            max-width: 45%;
+            max-width: 280px;
         }
     }
 }
 
-@media (max-width: $tablet-sm) {
+@media (max-width: $cellphone) {
     .menu {
         .logo {
-            max-width: 55%;
+            max-width: 220px;
         }
     }
 }

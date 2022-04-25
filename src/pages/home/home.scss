@@ -46,31 +46,6 @@
           font-weight: $font-weight-regular;
           height: 65px;
         }
-
-        .btn-outline-dark {
-          border-color: $dark;
-          color: $dark;
-        }
-
-        .btn-outline-dark:hover {
-          background-color: $dark;
-          color: #fff;
-        }
-
-        .btn-outline-primary {
-          border-color: $orange;
-          color: $orange;
-        }
-
-        .btn-outline-primary:focus,
-        .btn-outline-dark:focus {
-          box-shadow: none;
-        }
-
-        .btn-outline-primary:hover {
-          background-color: $orange;
-          color: #fff;
-        }
       }
     }
   }
