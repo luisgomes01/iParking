@@ -1,0 +1,49 @@
+@import "../../styles/colors";
+@import "../../styles/fonts";
+@import "../../styles/medias";
+
+.admin {
+  gap: 45px;
+  height: calc(100% - 7.5rem);
+  justify-content: center;
+  .admin-form {
+    gap: 10px;
+  }
+
+  .admin-actions {
+    gap: 10px;
+
+  }
+}
+
+// @media (max-width: 1199.98px) {
+//   .admin-actions {
+//     .action-btn {
+//       width: 100% !important;
+//     }
+//   }
+// }
+
+// @media (max-width: $tablet) {
+//   .admin-actions {
+//     .action-btn {
+//       width: 250px !important;
+//     }
+//   }
+// }
+
+// @media (max-width: $tablet-sm) {
+//   .admin-actions {
+//     .action-btn {
+//       width: 250px !important;
+//     }
+//   }
+// }
+
+// @media (max-width: $cellphone) {
+//   .admin-actions {
+//     .action-btn {
+//       width: 250px !important;
+//     }
+//   }
+// }
