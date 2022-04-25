@@ -1,0 +1,64 @@
+@import '../styles/colors';
+@import '../styles/fonts';
+@import '../styles/medias';
+
+.iparking-input {
+  background-color: $gray;
+  border-radius: 40px;
+}
+
+.iparking-input:focus {
+  outline: $orange 1px solid;
+  border-color: none;
+  box-shadow: none;
+  border: none;
+  background-color: $light-gray;
+}
+
+.main-container {
+  height: 100vh;
+}
+
+.btn-outline-dark {
+  border-color: $dark;
+  border-radius: 40px !important;
+  color: $dark;
+}
+
+.btn-outline-dark:hover {
+  background-color: $dark;
+  color: #fff;
+  outline: $orange solid 1px;
+}
+
+.btn-outline-primary {
+  border-color: $orange;
+  border-radius: 40px !important;
+  color: $orange;
+}
+
+.btn-outline-primary:focus,
+.btn-outline-dark:focus {
+  box-shadow: none;
+}
+
+.btn-outline-primary:hover {
+  background-color: $orange;
+  border: none;
+  color: #fff;
+  outline: $dark solid 1px;
+}
+
+.btn-outline-primary:active {
+  background-color: $orange;
+  border: none;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.btn-outline-dark:active {
+  background-color: $dark;
+  border: none;
+  box-shadow: none !important;
+  outline: none !important;
+}
