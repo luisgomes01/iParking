@@ -65,14 +65,14 @@ export default function Admin() {
             />
           </div>
         </section>
-        <footer className="admin-actions align-items-center container-fluid  col-xl-2 d-flex justify-content-center w-100">
-          <div className="align-items-center col-xl-2 d-flex flex-column justify-content-center">
+        <footer className="admin-actions align-items-center container-fluid d-flex justify-content-center w-100">
+          <div className="align-items-center d-flex flex-column justify-content-center">
             <button className="action-btn btn btn-outline-dark w-100">
               Cancelar
             </button>
           </div>
           <div className="align-items-center col-xl-2 d-flex flex-column justify-content-center">
-            <button className="action-btn btn btn-outline-primary w-100">
+            <button className="action-btn btn btn-outline-primary w-100"> 
               Salvar
             </button>
           </div>

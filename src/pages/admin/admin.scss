@@ -16,13 +16,13 @@
   }
 }
 
-// @media (max-width: $desktop) {
-//   .admin-actions {
-//     .action-btn {
-//       width: 250px !important;
-//     }
-//   }
-// }
+@media (max-width: $desktop) {
+  .admin-actions {
+    .action-btn {
+      width: 215px !important;
+    }
+  }
+}
 
 // @media (max-width: $tablet) {
 //   .admin-actions {
