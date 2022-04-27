@@ -68,8 +68,8 @@ export default function Admin() {
             />
           </div>
         </section>
-        <div className="admin-form align-items-center col-lg-6 col-md-6 col-sm-6 container-fluid d-flex flex-md-row flex-lg-row flex-sm-column flex-column justify-content-center w-100">
-          <div className="col-2">
+        <section className="admin-actions align-items-center col-lg-6 col-md-6 col-sm-6 container-fluid d-flex flex-md-row flex-lg-row flex-sm-column flex-column justify-content-center w-100">
+          <div className="align-items-center col-2 d-flex flex-column justify-content-center">
             <button
               className="btn btn-outline-dark w-100"
               onClick={() => navigate('/')}
@@ -77,7 +77,8 @@ export default function Admin() {
               Cancelar
             </button>
           </div>
-          <div className="col-2">
+
+          <div className="align-items-center col-2 d-flex flex-column justify-content-center">
             <button
               className="btn btn-outline-primary w-100"
               onClick={() => {
@@ -88,7 +89,7 @@ export default function Admin() {
               Salvar
             </button>
           </div>
-        </div>
+        </section>
       </main>
     </>
   )

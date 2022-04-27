@@ -12,6 +12,9 @@
 
   .admin-actions {
     gap: 10px;
+    .btn {
+      min-width: 228px;
+    }
 
   }
 }
