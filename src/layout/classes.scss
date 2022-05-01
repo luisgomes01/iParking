@@ -28,7 +28,7 @@
 .btn-outline-dark:hover {
   background-color: $dark;
   color: #fff;
-  outline: $orange solid 1px;
+  outline: $dark solid 1px;
 }
 
 .btn-outline-primary {
@@ -46,7 +46,7 @@
   background-color: $orange;
   border: none;
   color: #fff;
-  outline: $dark solid 1px;
+  outline: $orange solid 1px;
 }
 
 .btn-outline-primary:active {
@@ -61,4 +61,13 @@
   border: none;
   box-shadow: none !important;
   outline: none !important;
+}
+
+.primary {
+  color: $dark;
+  text-decoration: none;
+}
+
+.primary:hover {
+  color: $orange;
 }

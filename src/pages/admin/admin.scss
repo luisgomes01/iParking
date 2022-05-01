@@ -1,49 +1,27 @@
-@import "../../styles/colors";
-@import "../../styles/fonts";
-@import "../../styles/medias";
+@import '../../styles/colors';
+@import '../../styles/fonts';
+@import '../../styles/medias';
 
 .admin {
-  gap: 45px;
-  height: calc(80% - 7.5rem);
+  gap: 25px;
+  height: calc(100% - 7.5rem);
   justify-content: center;
   .admin-form {
     gap: 10px;
   }
-
   .admin-actions {
+    flex-wrap: wrap;
     gap: 10px;
-
-  }
-}
-
-@media (max-width: $desktop) {
-  .admin-actions {
-    .action-btn {
-      width: 215px !important;
+    
+    .btn {
+      min-width: 228px;
     }
   }
 }
 
-// @media (max-width: $tablet) {
-//   .admin-actions {
-//     .action-btn {
-//       width: 250px !important;
-//     }
-//   }
-// }
 
-// @media (max-width: $tablet-sm) {
-//   .admin-actions {
-//     .action-btn {
-//       width: 250px !important;
-//     }
-//   }
-// }
-
-// @media (max-width: $cellphone) {
-//   .admin-actions {
-//     .action-btn {
-//       width: 250px !important;
-//     }
-//   }
-// }
+@media (max-width: $cellphone) {
+  .admin {
+    height: unset;
+  }
+}

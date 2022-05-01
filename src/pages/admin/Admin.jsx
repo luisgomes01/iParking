@@ -1,10 +1,13 @@
 import './admin.scss'
 
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 import { CONSTANTS } from '../../utils/constants'
 
 export default function Admin() {
+  const navigate = useNavigate()
+
   return (
     <>
       <main className="admin container-fluid d-flex flex-column">
@@ -18,7 +21,7 @@ export default function Admin() {
             </label>
             <input
               className="form-control iparking-input text-center"
-              placeholder="ex. 3"
+              placeholder={CONSTANTS.ADMIN_ROUTE.GRACE_PERIOD_EXAMPLE}
               type="text"
             />
             <label className="form-label mb-2 mt-2">
@@ -26,7 +29,7 @@ export default function Admin() {
             </label>
             <input
               className="form-control iparking-input text-center"
-              placeholder="Tempo fixo"
+              placeholder={CONSTANTS.ADMIN_ROUTE.FIXED_TIME_EXAMPLE}
               type="text"
             />
             <label className="form-label mb-2 mt-2">
@@ -34,17 +37,17 @@ export default function Admin() {
             </label>
             <input
               className="form-control iparking-input text-center"
-              placeholder="Valor por tempo fixo"
+              placeholder={CONSTANTS.ADMIN_ROUTE.TIME_FIXED_VALUE_EXAMPLE}
               type="text"
             />
           </div>
           <div className="align-items-center col-xl-2 d-flex flex-column justify-content-center">
             <label className="form-label mb-2">
-              {CONSTANTS.ADMIN_ROUTE.HOUR_EXCEEDED}
+              {CONSTANTS.ADMIN_ROUTE.HOUR_EXCEDED}
             </label>
             <input
               className="form-control iparking-input text-center"
-              placeholder="Valor por hora excedida"
+              placeholder={CONSTANTS.ADMIN_ROUTE.HOUR_EXCEDED_EXAMPLE}
               type="text"
             />
             <label className="form-label mb-2 mt-2">
@@ -52,7 +55,7 @@ export default function Admin() {
             </label>
             <input
               className="form-control iparking-input text-center"
-              placeholder="Valor da diária"
+              placeholder={CONSTANTS.ADMIN_ROUTE.DAILY_VALUE_EXAMPLE}
               type="text"
             />
             <label className="form-label mb-2 mt-2">
@@ -60,23 +63,34 @@ export default function Admin() {
             </label>
             <input
               className="form-control iparking-input text-center"
-              placeholder="Valor mensal"
+              placeholder={CONSTANTS.ADMIN_ROUTE.MONTHLY_VALUE_EXAMPLE}
               type="text"
             />
           </div>
         </section>
-        <footer className="admin-actions align-items-center container-fluid d-flex justify-content-center w-100">
+        <section className="admin-actions align-items-center col-lg-6 col-md-6 col-sm-6 container-fluid d-flex flex-md-row flex-lg-row flex-sm-column-reverse flex-column justify-content-center w-100">
           <div className="align-items-center d-flex flex-column justify-content-center">
-            <button className="action-btn btn btn-outline-dark w-100">
-              Cancelar
+            <button
+              className="btn btn-outline-primary w-100"
+              onClick={() => {
+                navigate('/')
+                alert('Salvo com sucesso')
+              }}
+            >
+              {CONSTANTS.ADMIN_ACTIONS.SAVE}
             </button>
           </div>
-          <div className="align-items-center col-xl-2 d-flex flex-column justify-content-center">
-            <button className="action-btn btn btn-outline-primary w-100"> 
-              Salvar
+
+          <div className="align-items-center d-flex flex-column justify-content-center">
+            <button
+              className="btn btn-outline-dark w-100"
+              onClick={() => navigate('/')}
+            >
+              {CONSTANTS.ADMIN_ACTIONS.CANCEL}
             </button>
           </div>
-        </footer>
+
+        </section>
       </main>
     </>
   )
