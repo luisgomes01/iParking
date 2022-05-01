@@ -62,3 +62,11 @@
   box-shadow: none !important;
   outline: none !important;
 }
+
+.primary {
+  color: $dark;
+}
+
+.primary:hover {
+  color: $orange;
+}

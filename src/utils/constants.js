@@ -15,5 +15,14 @@ export const CONSTANTS = {
     TIME_FIXED_VALUE: 'Valor por tempo fixo'
   },
   CUSTOMER: 'Cliente',
+  CUSTOMER_ACTIONS: {
+    CANCEL: 'Cancel',
+    LOGIN: 'Entrar',
+    SIGNUP: 'Cadastre-se'
+  },
+  CUSTOMER_ROUTE: {
+    EMAIL: 'seumelhoremail@email.com',
+    PASSWORD: '********'
+  },
   PARK_WAS_NEVER_THAT_EASY: 'Estacionar nunca foi tão fácil.'
 }
