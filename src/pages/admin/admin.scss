@@ -3,7 +3,7 @@
 @import '../../styles/medias';
 
 .admin {
-  gap: 45px;
+  gap: 25px;
   height: calc(100% - 7.5rem);
   justify-content: center;
   .admin-form {
@@ -19,39 +19,9 @@
   }
 }
 
-// .admin-actions {
-//   gap: 10px;
-//   .btn {
-//     min-width: 228px;
-//   }
-
-// }
-// @media (max-width: 1199.98px) {
-//   .admin-actions {
-//     .action-btn {
-//       width: 100% !important;
-//     }
-//   }
-// }
-
-// @media (max-width: $tablet) {
-//   .admin-actions {
-//     .action-btn {
-//       width: 250px !important;
-//     }
-//   }
-// }
-
-// @media (max-width: $tablet-sm) {
-//   .admin-actions {
-//     .action-btn {
-//       width: 250px !important;
-//     }
-//   }
-// }
 
 @media (max-width: $cellphone) {
-  .admin-actions {
-    flex-direction: column-reverse !important;
+  .admin {
+    height: unset;
   }
 }
