@@ -28,7 +28,7 @@
 .btn-outline-dark:hover {
   background-color: $dark;
   color: #fff;
-  outline: $orange solid 1px;
+  outline: $dark solid 1px;
 }
 
 .btn-outline-primary {
@@ -44,21 +44,30 @@
 
 .btn-outline-primary:hover {
   background-color: $orange;
-  border: none;
+  border: 1px solid $orange;
   color: #fff;
-  outline: $dark solid 1px;
+  outline: $orange solid 1px;
 }
 
 .btn-outline-primary:active {
   background-color: $orange;
-  border: none;
+  border: 1px solid $dark;
   box-shadow: none !important;
   outline: none !important;
 }
 
 .btn-outline-dark:active {
   background-color: $dark;
-  border: none;
+  
   box-shadow: none !important;
   outline: none !important;
+}
+
+.primary {
+  color: $dark;
+  text-decoration: none;
+}
+
+.primary:hover {
+  color: $orange;
 }
