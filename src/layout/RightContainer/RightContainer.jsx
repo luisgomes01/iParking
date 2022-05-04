@@ -32,9 +32,9 @@ export default function RightContainer() {
               <button className="btn btn-outline-primary mt-2">
                 {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
               </button>
-              <button className="btn btn-outline-dark mt-2" to="/login">
+              <Link className="btn btn-outline-dark mt-2" to="/signup">
                 {CONSTANTS.CUSTOMER_ACTIONS.SIGNUP}
-              </button>
+              </Link>
               <Link className="primary mt-2" to="/">
                 {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}
               </Link>
