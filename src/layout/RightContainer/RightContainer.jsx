@@ -29,7 +29,7 @@ export default function RightContainer() {
               type="password"
             />
             <div className="customer-actions mt-2">
-              <button className="btn btn-outline-primary mt-2">
+              <button className="btn btn-outline-primary mt-2" to="/auto">
                 {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
               </button>
               <Link className="btn btn-outline-dark mt-2" to="/signup">
@@ -51,7 +51,7 @@ export default function RightContainer() {
         <div className="right-container-title">
           <h2>{CONSTANTS.ACCESS_AS}</h2>
         </div>
-        <div className="d-grid gap-3 col-lg-6 right-container-body">
+        <div className="d-grid gap-2 col-lg-6 right-container-body">
           <button
             className="btn btn-outline-dark"
             onClick={() => navigate('admin')}
