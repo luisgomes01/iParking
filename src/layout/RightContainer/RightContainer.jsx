@@ -12,7 +12,7 @@ export default function RightContainer() {
   if (location.pathname === '/customer') {
     return (
       <section className="container-fluid right-container">
-        <div className="align-items-center customer-section d-flex flex-column gap-1 h-100 justify-content-center right-container-content mt-3">
+        <div className="align-items-center customer-section d-flex flex-column gap-1 h-100 justify-content-center right-container-content">
           <h1>Login</h1>
           <div className="align-items-center d-flex flex-column justify-content-center">
             <label className="form-label">Email</label>
@@ -29,12 +29,12 @@ export default function RightContainer() {
               type="password"
             />
             <div className="customer-actions mt-2">
-              <button className="btn btn-outline-primary mt-2">
+              <button className="btn btn-outline-primary mt-2" to="/auto">
                 {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
               </button>
-              <button className="btn btn-outline-dark mt-2" to="/login">
+              <Link className="btn btn-outline-dark mt-2" to="/signup">
                 {CONSTANTS.CUSTOMER_ACTIONS.SIGNUP}
-              </button>
+              </Link>
               <Link className="primary mt-2" to="/">
                 {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}
               </Link>
@@ -51,7 +51,7 @@ export default function RightContainer() {
         <div className="right-container-title">
           <h2>{CONSTANTS.ACCESS_AS}</h2>
         </div>
-        <div className="d-grid gap-3 col-lg-6 right-container-body">
+        <div className="d-grid gap-2 col-lg-6 right-container-body">
           <button
             className="btn btn-outline-dark"
             onClick={() => navigate('admin')}

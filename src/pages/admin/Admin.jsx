@@ -33,21 +33,21 @@ export default function Admin() {
               type="text"
             />
             <label className="form-label mb-2 mt-2">
-              {CONSTANTS.ADMIN_ROUTE.TIME_FIXED_VALUE}
+              {CONSTANTS.ADMIN_ROUTE.FIXED_TIME_VALUE}
             </label>
             <input
               className="form-control iparking-input text-center"
-              placeholder={CONSTANTS.ADMIN_ROUTE.TIME_FIXED_VALUE_EXAMPLE}
+              placeholder={CONSTANTS.ADMIN_ROUTE.FIXED_TIME_VALUE_EXAMPLE}
               type="text"
             />
           </div>
           <div className="align-items-center col-xl-2 d-flex flex-column justify-content-center">
             <label className="form-label mb-2">
-              {CONSTANTS.ADMIN_ROUTE.HOUR_EXCEDED}
+              {CONSTANTS.ADMIN_ROUTE.EXCEEDED_HOUR}
             </label>
             <input
               className="form-control iparking-input text-center"
-              placeholder={CONSTANTS.ADMIN_ROUTE.HOUR_EXCEDED_EXAMPLE}
+              placeholder={CONSTANTS.ADMIN_ROUTE.EXCEEDED_HOUR_EXAMPLE}
               type="text"
             />
             <label className="form-label mb-2 mt-2">
@@ -89,7 +89,6 @@ export default function Admin() {
               {CONSTANTS.ADMIN_ACTIONS.CANCEL}
             </button>
           </div>
-
         </section>
       </main>
     </>
