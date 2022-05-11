@@ -41,7 +41,7 @@ export default function SignupAuto() {
               onClick={() => navigate('/signup/card')}
               type="button"
             >
-              {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
+              {CONSTANTS.CUSTOMER_ACTIONS.NEXT}
             </button>
             <Link className="primary mt-2" to="/">
               {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}

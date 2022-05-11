@@ -20,15 +20,27 @@ export const CONSTANTS = {
     MONTHLY_VALUE: 'Valor mensal',
     MONTHLY_VALUE_EXAMPLE: 'ex. R$0,00'
   },
+  APPLICATION_ROUTE: {
+    AVAILABILITY: 'Disponibilidade',
+    AVAILABLE: 'Disponível',
+    CANCEL: 'Voltar',
+    CONFIRM_LOT: 'Confirmar vaga',
+    GENERATE_PAYMENT: 'Gerar código',
+    GENERATE_PAYMENT_CODE: 'Gerar código de pagamento',
+    UNAVAILABLE: 'Indisponível'
+  },
   CUSTOMER: 'Cliente',
   CUSTOMER_ACTIONS: {
     CANCEL: 'Cancel',
     LOGIN: 'Entrar',
+    NEXT: 'Próximo',
+    REGISTER: 'Registrar',
     SIGNUP: 'Cadastre-se'
   },
   CUSTOMER_ROUTE: {
     EMAIL: 'seumelhoremail@email.com',
     PASSWORD: '********'
   },
+
   PARK_WAS_NEVER_THAT_EASY: 'Estacionar nunca foi tão fácil.'
 }

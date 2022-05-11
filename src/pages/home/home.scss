@@ -1,6 +1,6 @@
-@import "../../styles/colors";
-@import "../../styles/fonts";
-@import "../../styles/medias";
+@import '../../styles/colors';
+@import '../../styles/fonts';
+@import '../../styles/medias';
 
 .home {
   min-height: 100vh;
@@ -111,9 +111,7 @@
       }
     }
   }
-  
 }
-
 
 @media (max-width: $tablet) {
   .home {
@@ -125,8 +123,8 @@
     .left-container {
       height: 35rem;
       width: 100%;
-      justify-content: center !important; 
-      .left-container-items { 
+      justify-content: center !important;
+      .left-container-items {
         gap: 80px !important;
         align-items: center;
         .logo {
@@ -142,7 +140,7 @@
         }
       }
     }
-    
+
     .right-container {
       width: 55%;
       height: 20rem;
