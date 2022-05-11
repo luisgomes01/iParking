@@ -22,16 +22,10 @@ export default function GeneratePayment() {
           </div>
         </div>
         <div className="buttons customer-actions flex-column h-100 gap-1">
-          <Link
-            to="/application/check"
-            className="btn btn-outline-primary"
-          >
+          <Link to="/application/check" className="btn btn-outline-primary">
             {CONSTANTS.APPLICATION_ROUTE.GENERATE_PAYMENT}
           </Link>
-          <Link
-            to="/application"
-            className="btn primary"
-          >
+          <Link to="/application" className="btn primary">
             {CONSTANTS.APPLICATION_ROUTE.CANCEL}
           </Link>
         </div>
