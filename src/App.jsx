@@ -4,7 +4,7 @@ import React from 'react'
 
 import MainRoutes from './routes'
 
-function App({ armor, house, name }) {
+function App() {
   return (
     <div className="App">
       <MainRoutes />
