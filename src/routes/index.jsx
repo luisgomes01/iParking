@@ -3,6 +3,9 @@ import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 
 import Menu from '../layout/Menu/Menu'
 import Admin from '../pages/admin/Admin'
+import Availability from '../pages/application/Availability/Availability'
+import GeneratePayment from '../pages/application/GeneratePayment/GeneratePayment'
+import PaymentCode from '../pages/application/PaymentCode/PaymentCode'
 import Customer from '../pages/customer/Customer'
 import SignupAuto from '../pages/customer/signup/SignupAuto'
 import SignupCard from '../pages/customer/signup/SignupCard'
@@ -23,6 +26,11 @@ export default function MainRoutes() {
           <Route path="card" element={<SignupCard />} />
         </Route>
         <Route path="/" element={<Home />} />
+        <Route path="/application" element={<Index />}>
+          <Route index element={<Availability />} />
+          <Route path="payment" element={<GeneratePayment />} />
+          <Route path="check" element={<PaymentCode />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
