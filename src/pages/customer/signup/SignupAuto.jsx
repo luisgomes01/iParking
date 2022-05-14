@@ -37,7 +37,7 @@ export default function SignupAuto() {
           />
           <div className="customer-actions mt-2">
             <button className="btn btn-outline-primary mt-2"
-            onClick={() => navigate('card')}
+            onClick={() => navigate('/signup/card')}
             type="button">
               {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
             </button>
