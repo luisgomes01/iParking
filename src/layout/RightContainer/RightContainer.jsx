@@ -29,12 +29,12 @@ export default function RightContainer() {
               type="password"
             />
             <div className="customer-actions mt-2">
-              <button className="btn btn-outline-primary mt-2">
+              <Link className="btn btn-outline-primary mt-2" to="/application">
                 {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
-              </button>
-              <button className="btn btn-outline-dark mt-2" to="/login">
+              </Link>
+              <Link className="btn btn-outline-dark mt-2" to="/signup">
                 {CONSTANTS.CUSTOMER_ACTIONS.SIGNUP}
-              </button>
+              </Link>
               <Link className="primary mt-2" to="/">
                 {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}
               </Link>

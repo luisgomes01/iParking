@@ -1,11 +1,11 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+
 import { CONSTANTS } from '../../../utils/constants'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
 
 export default function SignupUser() {
-  const location = useLocation()
   const navigate = useNavigate()
-  
+
   return (
     <>
       <div className="align-items-center customer-section d-flex flex-column mt-3 justify-content-center">
@@ -42,9 +42,11 @@ export default function SignupUser() {
             type="text"
           />
           <div className="customer-actions mt-2">
-            <button className="btn btn-outline-primary mt-2"
-            onClick={() => navigate('auto')}
-            type="button">
+            <button
+              className="btn btn-outline-primary mt-2"
+              onClick={() => navigate('auto')}
+              type="button"
+            >
               {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
             </button>
             <Link className="primary mt-2" to="/">

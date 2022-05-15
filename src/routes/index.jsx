@@ -3,6 +3,9 @@ import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 
 import Menu from '../layout/Menu/Menu'
 import Admin from '../pages/admin/Admin'
+import Availability from '../pages/application/Availability'
+import GeneratePayment from '../pages/application/GeneratePayment'
+import PaymentCode from '../pages/application/PaymentCode'
 import Customer from '../pages/customer/Customer'
 import Home from '../pages/home/Home'
 
@@ -15,6 +18,11 @@ export default function MainRoutes() {
         </Route>
         <Route path="/customer" element={<Customer />} />
         <Route path="/" element={<Home />} />
+        <Route path="/application" element={<Index />}>
+          <Route index element={<Availability />} />
+          <Route path="payment" element={<GeneratePayment />} />
+          <Route path="pay" element={<PaymentCode />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
