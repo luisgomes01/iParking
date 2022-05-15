@@ -39,10 +39,13 @@ export default function SignupCard() {
           <div className="customer-actions mt-2">
             <button
               className="btn btn-outline-primary mt-2"
-              onClick={() => navigate('')}
+              onClick={() => {
+                alert('Usuário registrado com sucesso!')
+                navigate('/customer')
+              }}
               type="button"
             >
-              {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
+              {CONSTANTS.CUSTOMER_ACTIONS.REGISTER}
             </button>
             <Link className="primary mt-2" to="/">
               {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}

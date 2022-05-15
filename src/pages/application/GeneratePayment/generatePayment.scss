@@ -1,0 +1,29 @@
+@import '../../../styles/colors';
+@import '../../../styles/fonts';
+@import '../../../styles/medias';
+
+.selected-lot {
+  border-radius: 20px;
+  width: 400px;
+  height: 400px;
+
+  .selected-lot-body {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: $tablet) {
+  .selected-lot {
+    max-width: 300px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: $cellphone) {
+  .selected-lot {
+    width: 200px;
+    height: 200px;
+  }
+}

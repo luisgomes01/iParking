@@ -33,6 +33,8 @@ export const CONSTANTS = {
   CUSTOMER_ACTIONS: {
     CANCEL: 'Cancel',
     LOGIN: 'Entrar',
+    NEXT: 'Próximo',
+    REGISTER: 'Registrar',
     SIGNUP: 'Cadastre-se'
   },
   CUSTOMER_ROUTE: {

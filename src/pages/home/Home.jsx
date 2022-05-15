@@ -12,10 +12,17 @@ export default function Home({ children }) {
   if (
     location.pathname === '/application' ||
     location.pathname === '/application/payment' ||
+<<<<<<< HEAD
     location.pathname === '/application/pay'
   ) {
     return (
       <main className="home">
+=======
+    location.pathname === '/application/check'
+  ) {
+    return (
+      <main className="d-flex application">
+>>>>>>> c9b7d7c24007979dffc088a22e6796d112a9fd41
         <MainContainer>{children}</MainContainer>
       </main>
     )
