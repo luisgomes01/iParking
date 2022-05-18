@@ -1,0 +1,26 @@
+@import '../../../../../styles/colors';
+@import '../../../../../styles/fonts';
+@import '../../../../../styles/medias';
+
+.park-option {
+  width: 40px;
+  height: 40px;
+}
+
+.bg-none {
+  background-color: $gray;
+  color: $dark-gray;
+}
+
+.chosen {
+  transition: background-color 0.3s ease-out;
+  background-color: $blue !important;
+}
+
+@media (max-width: 300px) {
+  .park-option {
+    width: 20px;
+    height: 20px;
+    font-size: 15px;
+  }
+}
