@@ -19,11 +19,22 @@
     max-width: 300px;
     max-height: 300px;
   }
+  .buttons {
+    justify-content: flex-end;
+    height: 250px !important;
+  }
 }
 
 @media (max-width: $cellphone) {
+  .title {
+    max-width: 300px;
+  }
   .selected-lot {
     width: 200px;
     height: 200px;
+  }
+  .buttons {
+    justify-content: flex-end;
+    height: 180px !important;
   }
 }

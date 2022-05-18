@@ -88,3 +88,10 @@
 .min-width-btn {
   min-width: 228px;
 }
+
+.customer-actions {
+  display: flex;
+  text-align: center;
+  flex-direction: column !important;
+  width: 312px !important;
+}
