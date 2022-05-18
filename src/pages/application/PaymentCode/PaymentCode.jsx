@@ -1,3 +1,4 @@
+import './PaymentCode.scss';
 import React from 'react'
 
 import barcode from '../../../assets/barcode.svg'
