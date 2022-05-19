@@ -27,6 +27,7 @@ export const CONSTANTS = {
     CONFIRM_LOT: 'Confirmar vaga',
     GENERATE_PAYMENT: 'Gerar código',
     GENERATE_PAYMENT_CODE: 'Gerar código de pagamento',
+    PAYMENT: 'Pagar',
     UNAVAILABLE: 'Indisponível'
   },
   CUSTOMER: 'Cliente',

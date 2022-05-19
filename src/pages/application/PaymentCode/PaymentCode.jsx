@@ -1,13 +1,16 @@
 import './PaymentCode.scss';
+
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import barcode from '../../../assets/barcode.svg'
+import { CONSTANTS } from '../../../utils/constants'
 import Home from '../../home/Home'
 
 export default function PaymentCode() {
   return (
     <Home>
-      <section className="d-flex align-items-center justify-content-between flex-column">
+      <section className="d-flex align-items-center justify-content-between flex-column gap-2">
         <div className="payment-code-title mb-4">
           <h2 className="pt-3">Código de barras</h2>
         </div>
@@ -19,6 +22,14 @@ export default function PaymentCode() {
           <p>Saída: <span>8:00 hrs</span></p>
           <p>Permaneência: <span>9:00 hrs</span></p>
           <p>Valor: <span>R$XX,XX</span></p>
+        </div>
+        <div className="buttons customer-actions flex-column h-100 gap-1">
+          <Link to="/" className="btn btn-outline-primary">
+            {CONSTANTS.APPLICATION_ROUTE.PAYMENT}
+          </Link>
+          <Link to="/" className="btn primary">
+            {CONSTANTS.APPLICATION_ROUTE.CANCEL}
+          </Link>
         </div>
       </section>
     </Home>
