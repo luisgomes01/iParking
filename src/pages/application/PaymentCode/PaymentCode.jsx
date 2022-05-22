@@ -24,7 +24,9 @@ export default function PaymentCode() {
           <p>Valor: <span>R$XX,XX</span></p>
         </div>
         <div className="buttons customer-actions flex-column h-100 gap-1">
-          <Link to="/" className="btn btn-outline-primary">
+          <Link to="/" className="btn btn-outline-primary" onClick={() => {
+                alert('Usuário registrado com sucesso!')
+                navigate('/customer')}}>
             {CONSTANTS.APPLICATION_ROUTE.PAYMENT}
           </Link>
           <Link to="/" className="btn primary">
