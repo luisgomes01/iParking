@@ -25,7 +25,7 @@ export default function PaymentCode() {
         </div>
         <div className="buttons customer-actions flex-column h-100 gap-1">
           <Link to="/" className="btn btn-outline-primary" onClick={() => {
-                alert('Usuário registrado com sucesso!')
+                alert('Pagamento feito com sucesso!')
                 navigate('/customer')}}>
             {CONSTANTS.APPLICATION_ROUTE.PAYMENT}
           </Link>
