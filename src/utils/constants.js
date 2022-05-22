@@ -40,7 +40,9 @@ export const CONSTANTS = {
   },
   CUSTOMER_ROUTE: {
     EMAIL: 'seumelhoremail@email.com',
-    PASSWORD: '********'
+    EMAIL_LABEL: 'Email',
+    PASSWORD: '********',
+    PASSWORD_LABEL: 'Senha'
   },
 
   PARK_WAS_NEVER_THAT_EASY: 'Estacionar nunca foi tão fácil.'

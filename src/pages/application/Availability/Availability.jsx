@@ -163,7 +163,7 @@ export default function Availability() {
         >
           {CONSTANTS.APPLICATION_ROUTE.CONFIRM_LOT}
         </button>
-        <Link className="btn primary" to="/">
+        <Link className="btn primary" to="/customer">
           {CONSTANTS.APPLICATION_ROUTE.CANCEL}
         </Link>
       </div>
