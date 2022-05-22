@@ -1,8 +1,12 @@
 import './rightcontainer.scss'
 
+import { Form, Formik } from 'formik'
 import React from 'react'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 
+import { IparkingTextField } from '../../components/IparkingTextField'
+import { logInInitialValues } from '../../services/initialValues'
+import { loginValidation } from '../../services/validation'
 import { CONSTANTS } from '../../utils/constants'
 
 export default function RightContainer() {
@@ -11,37 +15,54 @@ export default function RightContainer() {
 
   if (location.pathname === '/customer') {
     return (
-      <section className="container-fluid right-container">
-        <div className="align-items-center customer-section d-flex flex-column gap-1 h-100 justify-content-center right-container-content">
-          <h1>Login</h1>
-          <div className="align-items-center d-flex flex-column justify-content-center">
-            <label className="form-label">Email</label>
-            <input
-              className="customer-input form-control iparking-input text-center"
-              placeholder={CONSTANTS.CUSTOMER_ROUTE.EMAIL}
-              type="text"
-            />
+      <Formik
+        initialValues={logInInitialValues}
+        validationSchema={loginValidation}
+        onSubmit={values => {
+          // Code to validade if exists in database also goes here
+          console.log(values)
+          navigate('/application')
+        }}
+      >
+        {formik => (
+          <section className="container-fluid right-container">
+            <div className="align-items-center customer-section d-flex flex-column gap-1 h-100 justify-content-center right-container-content">
+              <Form>
+                <h1 className="text-center">Login</h1>
+                <div className="align-items-center d-flex flex-column justify-content-center">
+                  <IparkingTextField
+                    label={CONSTANTS.CUSTOMER_ROUTE.EMAIL_LABEL}
+                    name="email"
+                    placeholder={CONSTANTS.CUSTOMER_ROUTE.EMAIL}
+                    type="text"
+                  />
 
-            <label className="form-label mt-2">Senha</label>
-            <input
-              className="customer-input form-control iparking-input text-center"
-              placeholder={CONSTANTS.CUSTOMER_ROUTE.PASSWORD}
-              type="password"
-            />
-            <div className="customer-actions mt-2">
-              <Link className="btn btn-outline-primary mt-2" to="/application">
-                {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
-              </Link>
-              <Link className="btn btn-outline-dark mt-2" to="/signup">
-                {CONSTANTS.CUSTOMER_ACTIONS.SIGNUP}
-              </Link>
-              <Link className="primary mt-2" to="/">
-                {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}
-              </Link>
+                  <IparkingTextField
+                    label={CONSTANTS.CUSTOMER_ROUTE.PASSWORD_LABEL}
+                    name="password"
+                    placeholder={CONSTANTS.CUSTOMER_ROUTE.PASSWORD}
+                    type="password"
+                  />
+                  <div className="customer-actions mt-2">
+                    <button
+                      className="btn btn-outline-primary mt-2"
+                      type="submit"
+                    >
+                      {CONSTANTS.CUSTOMER_ACTIONS.LOGIN}
+                    </button>
+                    <Link className="btn btn-outline-dark mt-2" to="/signup">
+                      {CONSTANTS.CUSTOMER_ACTIONS.SIGNUP}
+                    </Link>
+                    <Link className="primary mt-2" to="/">
+                      {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}
+                    </Link>
+                  </div>
+                </div>
+              </Form>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+        )}
+      </Formik>
     )
   }
 
