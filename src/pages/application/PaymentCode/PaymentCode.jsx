@@ -1,4 +1,4 @@
-import './PaymentCode.scss';
+import './PaymentCode.scss'
 
 import React from 'react'
 import { Link } from 'react-router-dom'
@@ -18,15 +18,27 @@ export default function PaymentCode() {
           <img src={barcode} alt="Generated barcode." />
         </div>
         <div className="information d-flex align-items-center flex-column mt-4">
-          <p>Entrada: <span>8:00 hrs</span></p>
-          <p>Saída: <span>8:00 hrs</span></p>
-          <p>Permaneência: <span>9:00 hrs</span></p>
-          <p>Valor: <span>R$XX,XX</span></p>
+          <p>
+            Entrada: <span>8:00 hrs</span>
+          </p>
+          <p>
+            Saída: <span>8:00 hrs</span>
+          </p>
+          <p>
+            Permanência: <span>9:00 hrs</span>
+          </p>
+          <p>
+            Valor: <span>R$XX,XX</span>
+          </p>
         </div>
         <div className="buttons customer-actions flex-column h-100 gap-1">
-          <Link to="/" className="btn btn-outline-primary" onClick={() => {
-                alert('Pagamento feito com sucesso!')
-                navigate('/customer')}}>
+          <Link
+            to="/"
+            className="btn btn-outline-primary"
+            onClick={() => {
+              alert('Pagamento feito com sucesso!')
+            }}
+          >
             {CONSTANTS.APPLICATION_ROUTE.PAYMENT}
           </Link>
           <Link to="/" className="btn primary">
