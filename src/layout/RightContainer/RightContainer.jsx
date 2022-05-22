@@ -12,7 +12,7 @@ export default function RightContainer() {
   if (location.pathname === '/customer') {
     return (
       <section className="container-fluid right-container">
-        <div className="align-items-center customer-section d-flex flex-column gap-1 h-100 justify-content-center right-container-content mt-3">
+        <div className="align-items-center customer-section d-flex flex-column gap-1 h-100 justify-content-center right-container-content">
           <h1>Login</h1>
           <div className="align-items-center d-flex flex-column justify-content-center">
             <label className="form-label">Email</label>
