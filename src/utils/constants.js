@@ -39,10 +39,17 @@ export const CONSTANTS = {
     SIGNUP: 'Cadastre-se'
   },
   CUSTOMER_ROUTE: {
+    CPF: '000.000.000-00',
+    CPF_LABEL: 'CPF',
     EMAIL: 'seumelhoremail@email.com',
     EMAIL_LABEL: 'Email',
+    NAME: 'Caio',
+    NAME_LABEL: 'Nome',
     PASSWORD: '********',
-    PASSWORD_LABEL: 'Senha'
+    PASSWORD_LABEL: 'Senha',
+    PHONE: '(DDD)0 0000-0000',
+    PHONE_LABEL: 'Telefone',
+    USER_REGISTRATION: 'Cadastro de Usuário'
   },
 
   PARK_WAS_NEVER_THAT_EASY: 'Estacionar nunca foi tão fácil.'

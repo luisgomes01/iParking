@@ -9,6 +9,7 @@ export const IparkingTextField = ({ label, ...props }) => {
       <label className="form-label mt-2" htmlFor={field.name}>
         {label}
       </label>
+
       <input
         className={`customer-input form-control iparking-input text-center ${
           meta.touched && meta.error && 'is-invalid'
@@ -16,6 +17,7 @@ export const IparkingTextField = ({ label, ...props }) => {
         {...field}
         {...props}
       />
+
       <span className="text-danger mt-1">
         <u>
           <i>
