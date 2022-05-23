@@ -41,7 +41,7 @@ export default function MainRoutes() {
 
 const Index = () => {
   return (
-    <div className="main-container">
+    <div className="main-container d-flex flex-column">
       <Menu />
       <Outlet />
     </div>

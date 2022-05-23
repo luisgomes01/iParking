@@ -9,7 +9,7 @@ export default function SignupCard() {
 
   return (
     <>
-      <div className="align-items-center customer-section d-flex flex-column mt-3 justify-content-center">
+      <div className="align-items-center customer-section d-flex flex-column flex-grow-1 mt-3 justify-content-center">
         <h1>Cadastro Cartão</h1>
         <div className="align-items-center d-flex flex-column justify-content-center">
           <label className="form-label mt-2">Número</label>
@@ -48,7 +48,7 @@ export default function SignupCard() {
             >
               {CONSTANTS.CUSTOMER_ACTIONS.REGISTER}
             </button>
-            <Link className="primary mt-2" to="/">
+            <Link className="primary mt-2" to="/signup/auto">
               {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}
             </Link>
           </div>

@@ -10,7 +10,7 @@ export default function Admin() {
 
   return (
     <>
-      <main className="admin container-fluid d-flex flex-column">
+      <main className="admin container-fluid d-flex flex-grow-1 flex-column">
         <p className="admin-title h1 text-center mt-3">
           {CONSTANTS.ADMIN_ROUTE.BUSINESS_RULES}
         </p>

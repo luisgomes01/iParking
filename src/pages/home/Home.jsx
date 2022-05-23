@@ -15,7 +15,7 @@ export default function Home({ children }) {
     location.pathname === '/application/check'
   ) {
     return (
-      <main className="d-flex application">
+      <main className="d-flex application align-items-center flex-grow-1">
         <MainContainer>{children}</MainContainer>
       </main>
     )

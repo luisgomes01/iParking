@@ -28,7 +28,7 @@ export default function RightContainer() {
           <section className="container-fluid right-container">
             <div className="align-items-center customer-section d-flex flex-column gap-1 h-100 justify-content-center right-container-content">
               <Form>
-                <h1 className="text-center">Login</h1>
+                <h1 className="text-center pt-4">Login</h1>
                 <div className="align-items-center d-flex flex-column justify-content-center">
                   <IparkingTextField
                     label={CONSTANTS.CUSTOMER_ROUTE.EMAIL_LABEL}

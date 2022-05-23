@@ -9,7 +9,7 @@ export default function SignupUser() {
 
   return (
     <>
-      <div className="align-items-center customer-section d-flex flex-column mt-3 justify-content-center">
+      <div className="align-items-center customer-section d-flex flex-column flex-grow-1 mt-3 justify-content-center">
         <h1>Cadastro Usuário</h1>
         <div className="align-items-center d-flex flex-column justify-content-center">
           <label className="form-label mt-2">Nome</label>
