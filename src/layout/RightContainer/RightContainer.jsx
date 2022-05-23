@@ -2,16 +2,16 @@ import './rightcontainer.scss'
 
 import { Form, Formik } from 'formik'
 import React from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import { IparkingTextField } from '../../components/IparkingTextField'
+import { useRouterDom } from '../../contexts/RouterDom'
 import { logInInitialValues } from '../../services/initialValues'
 import { loginValidation } from '../../services/validation'
 import { CONSTANTS } from '../../utils/constants'
 
 export default function RightContainer() {
-  const location = useLocation()
-  const navigate = useNavigate()
+  const { location, navigate } = useRouterDom()
 
   if (location.pathname === '/customer') {
     return (

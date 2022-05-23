@@ -1,12 +1,12 @@
 import './admin.scss'
 
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
 
+import { useRouterDom } from '../../contexts/RouterDom'
 import { CONSTANTS } from '../../utils/constants'
 
 export default function Admin() {
-  const navigate = useNavigate()
+  const { navigate } = useRouterDom()
 
   return (
     <>

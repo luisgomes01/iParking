@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
+import { useRouterDom } from '../../../contexts/RouterDom'
 import { CONSTANTS } from '../../../utils/constants'
 
 export default function SignupCard() {
-  const navigate = useNavigate()
+  const { navigate } = useRouterDom()
 
   return (
     <>

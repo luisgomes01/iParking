@@ -1,14 +1,15 @@
 import './availability.scss'
 
 import React, { useEffect, useState } from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
+import { useRouterDom } from '../../../contexts/RouterDom'
 import { CONSTANTS } from '../../../utils/constants'
 import Home from '../../home/Home'
 import OptionButton from './components/OptionButton/OptionButton'
 
 export default function Availability() {
-  const navigate = useNavigate()
+  const { navigate } = useRouterDom()
   const [options, setOptions] = useState([])
   const [chosenOption, setChosenOption] = useState(null)
 
@@ -158,7 +159,7 @@ export default function Availability() {
       <div className="buttons customer-actions flex-column h-100 gap-1">
         <button
           className="btn btn-outline-primary"
-          onClick={() => navigate('payment')}
+          onClick={() => navigate('/application/payment')}
           disabled={chosenOption === null}
         >
           {CONSTANTS.APPLICATION_ROUTE.CONFIRM_LOT}

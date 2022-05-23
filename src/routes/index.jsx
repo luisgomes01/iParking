@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom'
 
+import { RouterDomProvider } from '../contexts/RouterDom'
 import Menu from '../layout/Menu/Menu'
 import Admin from '../pages/admin/Admin'
 import Availability from '../pages/application/Availability/Availability'
@@ -15,23 +16,25 @@ import Home from '../pages/home/Home'
 export default function MainRoutes() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/admin" element={<Index />}>
-          <Route index element={<Admin />} />
-        </Route>
-        <Route path="/customer" element={<Customer />} />
-        <Route path="/signup" element={<Index />}>
-          <Route index element={<SignupUser />} />
-          <Route path="auto" element={<SignupAuto />} />
-          <Route path="card" element={<SignupCard />} />
-        </Route>
-        <Route path="/" element={<Home />} />
-        <Route path="/application" element={<Index />}>
-          <Route index element={<Availability />} />
-          <Route path="payment" element={<GeneratePayment />} />
-          <Route path="check" element={<PaymentCode />} />
-        </Route>
-      </Routes>
+      <RouterDomProvider>
+        <Routes>
+          <Route path="/admin" element={<Index />}>
+            <Route index element={<Admin />} />
+          </Route>
+          <Route path="/customer" element={<Customer />} />
+          <Route path="/signup" element={<Index />}>
+            <Route index element={<SignupUser />} />
+            <Route path="auto" element={<SignupAuto />} />
+            <Route path="card" element={<SignupCard />} />
+          </Route>
+          <Route path="/" element={<Home />} />
+          <Route path="/application" element={<Index />}>
+            <Route index element={<Availability />} />
+            <Route path="payment" element={<GeneratePayment />} />
+            <Route path="check" element={<PaymentCode />} />
+          </Route>
+        </Routes>
+      </RouterDomProvider>
     </BrowserRouter>
   )
 }

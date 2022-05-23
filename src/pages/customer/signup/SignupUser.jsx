@@ -1,10 +1,11 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
+import { useRouterDom } from '../../../contexts/RouterDom'
 import { CONSTANTS } from '../../../utils/constants'
 
 export default function SignupUser() {
-  const navigate = useNavigate()
+  const { navigate } = useRouterDom()
 
   return (
     <>
@@ -44,7 +45,7 @@ export default function SignupUser() {
           <div className="customer-actions mt-2">
             <button
               className="btn btn-outline-primary mt-2"
-              onClick={() => navigate('auto')}
+              onClick={() => navigate('/signup/auto')}
               type="button"
             >
               {CONSTANTS.CUSTOMER_ACTIONS.NEXT}
