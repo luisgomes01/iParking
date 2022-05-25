@@ -14,7 +14,7 @@ export function maskPhone(value) {
 
 export function maskCreditCard(value) {
   value = value.replace(/\D/g, '') // Remove tudo o que não é dígito
-  value = value.replace(/(\d{4})/g, '$1 ')
+  value = value.replace(/(\d{4})/g, '$1 ').trim()
   return value
 }
 
