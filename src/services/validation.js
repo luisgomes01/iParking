@@ -20,3 +20,17 @@ export const signupValidation = Yup.object({
     .required('A phone number is required.')
     .min(11, 'Certifique-se de por o DDD.')
 })
+
+export const signupAutoValidation = Yup.object({
+  plate: Yup.string()
+    .required('Placa é um campo obrigatório.')
+    .min(7, 'Insira uma placa válida.'),
+  type: Yup.string().required('Tipo de automóvel é um campo obrigatório.')
+})
+
+export const signupCardValdiation = Yup.object({
+  CVV: Yup.string().required('CVV é um campo obrigatório.'),
+  cardNumber: Yup.string().required('Cartão é obrigatório.'),
+  nameInCard: Yup.string().required('Nome no cartão é obrigatório.'),
+  validThru: Yup.string().required('Validade é um campo obrigatório.')
+})

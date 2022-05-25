@@ -1,55 +1,68 @@
+import { Form, Formik } from 'formik'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import { IparkingTextField } from '../../../components/IparkingTextField'
 import { useRouterDom } from '../../../contexts/RouterDom'
+import { signupAutoInitialValues } from '../../../services/initialValues'
+import { signupAutoValidation } from '../../../services/validation'
 import { CONSTANTS } from '../../../utils/constants'
 
 export default function SignupAuto() {
   const { navigate } = useRouterDom()
-
   return (
-    <>
-      <div className="align-items-center customer-section d-flex flex-column flex-grow-1 mt-3 justify-content-center">
-        <h1>Cadastro Veículo</h1>
-        <div className="align-items-center d-flex flex-column justify-content-center">
-          <label className="form-label mt-2">Placa</label>
-          <input
-            className="customer-input form-control iparking-input text-center"
-            placeholder="ABC1234"
-            type="text"
-          />
-          <label className="form-label mt-2">Tipo</label>
-          <input
-            className="customer-input form-control iparking-input text-center"
-            placeholder="carro ou moto"
-            type="text"
-          />
-          <label className="form-label mt-2">Modelo</label>
-          <input
-            className="customer-input form-control iparking-input text-center"
-            placeholder="Modelo"
-            type="text"
-          />
-          <label className="form-label mt-2">Marca</label>
-          <input
-            className="customer-input form-control iparking-input text-center"
-            placeholder="Marca"
-            type="text"
-          />
-          <div className="customer-actions mt-2">
-            <button
-              className="btn btn-outline-primary mt-2"
-              onClick={() => navigate('/signup/card')}
-              type="button"
-            >
-              {CONSTANTS.CUSTOMER_ACTIONS.NEXT}
-            </button>
-            <Link className="primary mt-2" to="/signup">
-              {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}
-            </Link>
-          </div>
+    <Formik
+      initialValues={signupAutoInitialValues}
+      validationSchema={signupAutoValidation}
+      onSubmit={values => {
+        // Code to validade if exists in database also goes here
+        console.log(values)
+        navigate('/signup/card')
+      }}
+    >
+      {formik => (
+        <div className="align-items-center customer-section d-flex flex-column flex-grow-1 mt-3 justify-content-center">
+          <Form>
+            <h1>Cadastro Veículo</h1>
+            <div className="align-items-center d-flex flex-column justify-content-center">
+              <IparkingTextField
+                label="Placa"
+                maxLength={7}
+                name="plate"
+                placeholder="ABC1234"
+                type="text"
+              />
+              <IparkingTextField
+                label="Tipo"
+                name="type"
+                placeholder="carro ou moto"
+                type="text"
+              />
+              <IparkingTextField
+                label="Modelo"
+                name="model"
+                placeholder="Modelo"
+                type="text"
+              />
+              <IparkingTextField
+                label="Marca"
+                name="brand"
+                placeholder="Marca"
+                type="text"
+              />
+
+              <div className="customer-actions mt-2">
+                <button className="btn btn-outline-primary mt-2" type="submit">
+                  {CONSTANTS.CUSTOMER_ACTIONS.NEXT}
+                </button>
+                <Link className="primary mt-2" to="/signup">
+                  {CONSTANTS.CUSTOMER_ACTIONS.CANCEL}
+                </Link>
+              </div>
+            </div>
+          </Form>
         </div>
-      </div>
-    </>
+      )}
+    </Formik>
   )
 }

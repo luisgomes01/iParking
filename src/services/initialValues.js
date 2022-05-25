@@ -10,3 +10,17 @@ export const signupUserInitialValues = {
   password: '',
   phone: ''
 }
+
+export const signupAutoInitialValues = {
+  brand: '',
+  model: '',
+  plate: '',
+  type: ''
+}
+
+export const signupCardInitialValues = {
+  CVV: '',
+  cardNumber: '',
+  nameInCard: '',
+  validThru: ''
+}
