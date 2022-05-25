@@ -1,5 +1,7 @@
+import dayjs from 'dayjs'
 import * as Yup from 'yup'
 
+console.log(dayjs(new Date()))
 export const loginValidation = Yup.object({
   email: Yup.string()
     .email('Email não é válido.')
@@ -32,5 +34,5 @@ export const signupCardValdiation = Yup.object({
   CVV: Yup.string().required('CVV é um campo obrigatório.'),
   cardNumber: Yup.string().required('Cartão é obrigatório.'),
   nameInCard: Yup.string().required('Nome no cartão é obrigatório.'),
-  validThru: Yup.string().required('Validade é um campo obrigatório.')
+  validThru: Yup.string().required('Vencimento é um campo obrigatório.')
 })

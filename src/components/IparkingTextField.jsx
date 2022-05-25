@@ -1,12 +1,15 @@
 import { ErrorMessage, useField } from 'formik'
 import React from 'react'
 
-export const IparkingTextField = ({ label, ...props }) => {
+import { RequiredIcon } from './RequiredIcon'
+
+export const IparkingTextField = ({ label, required, ...props }) => {
   const [field, meta] = useField(props)
   return (
     <>
       <label className="form-label mt-2" htmlFor={field.name}>
         {label}
+        {required && <RequiredIcon />}
       </label>
 
       <input

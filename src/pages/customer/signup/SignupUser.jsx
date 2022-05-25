@@ -31,6 +31,7 @@ export default function SignupUser() {
                 label={CONSTANTS.CUSTOMER_ROUTE.NAME_LABEL}
                 name="name"
                 placeholder={CONSTANTS.CUSTOMER_ROUTE.NAME}
+                required
                 type="text"
               />
               <IparkingTextField
@@ -41,6 +42,7 @@ export default function SignupUser() {
                   setFieldValue('phone', maskPhone(event.target.value))
                 }
                 placeholder={CONSTANTS.CUSTOMER_ROUTE.PHONE}
+                required
                 type="text"
               />
 
@@ -52,6 +54,7 @@ export default function SignupUser() {
                   setFieldValue('cpf', maskCPF(event.target.value))
                 }
                 placeholder={CONSTANTS.CUSTOMER_ROUTE.CPF}
+                required
                 type="text"
               />
 
@@ -59,12 +62,14 @@ export default function SignupUser() {
                 label={CONSTANTS.CUSTOMER_ROUTE.EMAIL_LABEL}
                 name="email"
                 placeholder={CONSTANTS.CUSTOMER_ROUTE.EMAIL}
+                required
                 type="text"
               />
               <IparkingTextField
                 label={CONSTANTS.CUSTOMER_ROUTE.PASSWORD_LABEL}
                 name="password"
                 placeholder={CONSTANTS.CUSTOMER_ROUTE.PASSWORD}
+                required
                 type="password"
               />
               <div className="customer-actions mt-2">

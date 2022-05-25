@@ -38,12 +38,14 @@ export default function SignupCard() {
                   )
                 }}
                 placeholder="0000 0000 0000 0000"
+                required
                 type="text"
               />
               <IparkingTextField
                 label="Nome no cartão"
                 name="nameInCard"
                 placeholder="Caio Lucas"
+                required
                 type="text"
               />
               <IparkingTextField
@@ -54,6 +56,7 @@ export default function SignupCard() {
                   setFieldValue('validThru', maskDate(event.target.value))
                 }}
                 placeholder="MM/YY"
+                required
                 type="text"
               />
               <IparkingTextField
@@ -61,6 +64,7 @@ export default function SignupCard() {
                 maxLength={3}
                 name="CVV"
                 placeholder="***"
+                required
                 type="password"
               />
 

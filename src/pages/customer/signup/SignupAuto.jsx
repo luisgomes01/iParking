@@ -30,12 +30,14 @@ export default function SignupAuto() {
                 maxLength={7}
                 name="plate"
                 placeholder="ABC1234"
+                required
                 type="text"
               />
               <IparkingTextField
                 label="Tipo"
                 name="type"
                 placeholder="carro ou moto"
+                required
                 type="text"
               />
               <IparkingTextField
