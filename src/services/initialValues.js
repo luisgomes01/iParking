@@ -3,24 +3,18 @@ export const logInInitialValues = {
   password: ''
 }
 
-export const signupUserInitialValues = {
+export const signupInitialValues = {
+  CVV: '',
+  brand: '',
+  cardNumber: '',
   cpf: '',
   email: '',
-  name: '',
-  password: '',
-  phone: ''
-}
-
-export const signupAutoInitialValues = {
-  brand: '',
   model: '',
-  plate: '',
-  type: ''
-}
-
-export const signupCardInitialValues = {
-  CVV: '',
-  cardNumber: '',
+  name: '',
   nameInCard: '',
+  password: '',
+  phone: '',
+  plate: '',
+  type: '',
   validThru: ''
 }

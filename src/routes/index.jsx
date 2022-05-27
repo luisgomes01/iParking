@@ -8,9 +8,7 @@ import Availability from '../pages/application/Availability/Availability'
 import GeneratePayment from '../pages/application/GeneratePayment/GeneratePayment'
 import PaymentCode from '../pages/application/PaymentCode/PaymentCode'
 import Customer from '../pages/customer/Customer'
-import SignupAuto from '../pages/customer/signup/SignupAuto'
-import SignupCard from '../pages/customer/signup/SignupCard'
-import SignupUser from '../pages/customer/signup/SignupUser'
+import { SignupIndex } from '../pages/customer/signup/SignupIndex'
 import Home from '../pages/home/Home'
 
 export default function MainRoutes() {
@@ -23,9 +21,7 @@ export default function MainRoutes() {
           </Route>
           <Route path="/customer" element={<Customer />} />
           <Route path="/signup" element={<Index />}>
-            <Route index element={<SignupUser />} />
-            <Route path="auto" element={<SignupAuto />} />
-            <Route path="card" element={<SignupCard />} />
+            <Route index element={<SignupIndex />} />
           </Route>
           <Route path="/" element={<Home />} />
           <Route path="/application" element={<Index />}>
