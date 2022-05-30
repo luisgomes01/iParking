@@ -1,0 +1,1 @@
+export const JWT_SIGN_IN_KEY = "AeKdLcbJgA!@3KW!aw2@?¨:}{O)@*!$P:L¨:>?}:<:M<MBV"
