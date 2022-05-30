@@ -1,10 +1,12 @@
 import express from 'express'
-import mongoose from 'mongoose';
-import routes from './routes.js';
+import mongoose from 'mongoose'
+import routes from './routes.js'
+import cors from 'cors'
 
 const PORT = process.env.PORT || 3333
 const app = express()
 app.use(express.json())
+app.use(cors())
 app.use(routes)
 
 const uri = "mongodb+srv://root:root@cluster0.d0y5a.mongodb.net/?retryWrites=true&w=majority";
