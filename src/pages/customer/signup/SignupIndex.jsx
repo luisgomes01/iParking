@@ -19,8 +19,14 @@ export const SignupIndex = () => {
     <Formik
       initialValues={signupInitialValues}
       validationSchema={signupValidation}
-      onSubmit={values => {
-        createUser(values)
+      onSubmit={async values => {
+        const registerUser = await createUser(values)
+
+        if (registerUser.message) {
+          alert(registerUser.message)
+          return
+        }
+
         alert('Registrado com sucesso!')
         navigate('/customer')
       }}

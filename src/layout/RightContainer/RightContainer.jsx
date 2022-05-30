@@ -19,8 +19,14 @@ export default function RightContainer() {
       <Formik
         initialValues={logInInitialValues}
         validationSchema={loginValidation}
-        onSubmit={values => {
-          authenticate(values)
+        onSubmit={async values => {
+          const auth = await authenticate(values)
+
+          if (auth.message) {
+            alert(auth.message)
+            return
+          }
+
           navigate('/application')
         }}
       >
