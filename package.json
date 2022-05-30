@@ -10,9 +10,12 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.3.4"
   },
+  "engines": {
+    "node": "16.x"
+  },
   "scripts": {
     "dev": "PORT=1231 nodemon run .",
-    "start": "node run ."
+    "start": "node src/index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.16"
