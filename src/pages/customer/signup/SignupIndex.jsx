@@ -2,6 +2,7 @@ import { Formik } from 'formik'
 import React, { useState } from 'react'
 
 import { useRouterDom } from '../../../contexts/RouterDom'
+import { createUser } from '../../../services'
 import { signupInitialValues } from '../../../services/initialValues'
 import { signupValidation } from '../../../services/validation'
 import SignupAuto from './SignupAuto'
@@ -19,9 +20,8 @@ export const SignupIndex = () => {
       initialValues={signupInitialValues}
       validationSchema={signupValidation}
       onSubmit={values => {
-        // Code to validade if exists in database also goes here
+        createUser(values)
         alert('Registrado com sucesso!')
-        console.log(values)
         navigate('/customer')
       }}
       validateOnChange

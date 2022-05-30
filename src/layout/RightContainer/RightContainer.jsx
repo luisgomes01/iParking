@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom'
 
 import { IparkingTextField } from '../../components/IparkingTextField'
 import { useRouterDom } from '../../contexts/RouterDom'
+import { authenticate } from '../../services'
 import { logInInitialValues } from '../../services/initialValues'
 import { loginValidation } from '../../services/validation'
 import { CONSTANTS } from '../../utils/constants'
@@ -19,8 +20,7 @@ export default function RightContainer() {
         initialValues={logInInitialValues}
         validationSchema={loginValidation}
         onSubmit={values => {
-          // Code to validade if exists in database also goes here
-          console.log(values)
+          authenticate(values)
           navigate('/application')
         }}
       >
