@@ -28,3 +28,14 @@ export const signupValidation = Yup.object({
   type: Yup.string().required('Tipo de automóvel é um campo obrigatório.'),
   validThru: Yup.string().required('Vencimento é um campo obrigatório.')
 })
+
+export const businessRulesValidation = Yup.object({
+  dailyValue: Yup.string().required('Valor diário é obrigatório.'),
+  exceededHourValue: Yup.string().required(
+    'Valor por hora excedida é obrigatório.'
+  ),
+  fixedTime: Yup.string().required('Tempo Fixo é obrigatório.'),
+  fixedTimeValue: Yup.string().required('Valor por tempo fixo é obrigatório.'),
+  gracePeriod: Yup.string().required('Tempo de carência é obrigatório.'),
+  monthlyValue: Yup.string()
+})

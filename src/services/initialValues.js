@@ -18,3 +18,12 @@ export const signupInitialValues = {
   type: '',
   validThru: ''
 }
+
+export const businessRulesInitialValues = {
+  dailyValue: '',
+  exceededHourValue: '',
+  fixedTime: '',
+  fixedTimeValue: '',
+  gracePeriod: '',
+  monthlyValue: ''
+}
