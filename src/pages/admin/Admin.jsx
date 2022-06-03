@@ -5,6 +5,7 @@ import React from 'react'
 
 import { IparkingTextField } from '../../components/IparkingTextField'
 import { useRouterDom } from '../../contexts/RouterDom'
+import { createBusinnessRule } from '../../services'
 import { businessRulesInitialValues } from '../../services/initialValues'
 import { businessRulesValidation } from '../../services/validation'
 import { CONSTANTS } from '../../utils/constants'
@@ -17,7 +18,10 @@ export default function Admin() {
       initialValues={businessRulesInitialValues}
       validationSchema={businessRulesValidation}
       onSubmit={values => {
-        console.log(values)
+        createBusinnessRule(values)
+
+        alert('Criado com sucesso!')
+        navigate('/')
       }}
     >
       <main className="admin container-fluid d-flex flex-grow-1 flex-column">
