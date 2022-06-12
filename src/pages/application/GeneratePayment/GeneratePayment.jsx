@@ -7,6 +7,8 @@ import { CONSTANTS } from '../../../utils/constants'
 import Home from '../../home/Home'
 
 export default function GeneratePayment() {
+  const park = JSON.parse(localStorage.getItem('@iparking/park'))
+
   return (
     <Home>
       <section className="align-items-center d-flex flex-column gap-5 justify-content-center w-100 h-100">
@@ -18,7 +20,10 @@ export default function GeneratePayment() {
           </div>
 
           <div className="position-absolute selected-lot-body text-center">
-            <h3 className="text-light-gray lot mt-5">A1</h3>
+            <h3 className="text-light-gray lot mt-5">
+              {park.section}
+              {park.number}
+            </h3>
           </div>
         </div>
         <div className="buttons customer-actions flex-column h-100 gap-1">

@@ -13,6 +13,11 @@ export default function Availability() {
   const [options, setOptions] = useState([])
   const [chosenOption, setChosenOption] = useState(null)
 
+  function saveOption() {
+    localStorage.setItem('@iparking/park', JSON.stringify(chosenOption))
+    navigate('/application/payment')
+  }
+
   useEffect(() => {
     const parking = [
       {
@@ -57,7 +62,37 @@ export default function Availability() {
       },
       {
         disponibility: false,
+        number: 4,
+        section: 'B'
+      },
+      {
+        disponibility: true,
+        number: 5,
+        section: 'B'
+      },
+      {
+        disponibility: false,
         number: 1,
+        section: 'C'
+      },
+      {
+        disponibility: false,
+        number: 2,
+        section: 'C'
+      },
+      {
+        disponibility: true,
+        number: 3,
+        section: 'C'
+      },
+      {
+        disponibility: false,
+        number: 4,
+        section: 'C'
+      },
+      {
+        disponibility: true,
+        number: 5,
         section: 'C'
       },
       {
@@ -67,7 +102,47 @@ export default function Availability() {
       },
       {
         disponibility: false,
+        number: 2,
+        section: 'D'
+      },
+      {
+        disponibility: true,
+        number: 3,
+        section: 'D'
+      },
+      {
+        disponibility: false,
+        number: 4,
+        section: 'D'
+      },
+      {
+        disponibility: true,
+        number: 5,
+        section: 'D'
+      },
+      {
+        disponibility: false,
         number: 1,
+        section: 'E'
+      },
+      {
+        disponibility: false,
+        number: 2,
+        section: 'E'
+      },
+      {
+        disponibility: true,
+        number: 3,
+        section: 'E'
+      },
+      {
+        disponibility: false,
+        number: 4,
+        section: 'E'
+      },
+      {
+        disponibility: true,
+        number: 5,
         section: 'E'
       },
       {
@@ -83,6 +158,17 @@ export default function Availability() {
       {
         disponibility: true,
         number: 3,
+        section: 'F'
+      },
+      ,
+      {
+        disponibility: false,
+        number: 4,
+        section: 'F'
+      },
+      {
+        disponibility: true,
+        number: 5,
         section: 'F'
       }
     ]
@@ -159,7 +245,7 @@ export default function Availability() {
       <div className="buttons customer-actions flex-column h-100 gap-1">
         <button
           className="btn btn-outline-primary"
-          onClick={() => navigate('/application/payment')}
+          onClick={() => saveOption()}
           disabled={chosenOption === null}
         >
           {CONSTANTS.APPLICATION_ROUTE.CONFIRM_LOT}
